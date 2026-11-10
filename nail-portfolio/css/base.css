@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Base Styles: Snigdha's World Luxury Blush & Rose Atelier
+   Inspired by contemporary luxury beauty mockups:
+   Pastel blush, soft marshmallow cream, chic berry rose, and deep espresso.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette - Dreamy Blush Rose & Deep Noir */
+  --color-bg: #FFF8F9;
+  --color-bg-alt: #FDF1F3;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #FDF2F4;
+  --color-surface-card: #FFFFFF;
+  
+  --color-text: #2A2225;
+  --color-text-muted: #74676C;
+  --color-text-subtle: #9E9095;
+  --color-white: #FFFFFF;
+
+  /* Rose & Berry Accents */
+  --color-rose: #C86B83;
+  --color-rose-light: #FDE8ED;
+  --color-rose-hover: #B55870;
+  --color-rose-dark: #8C374E;
+  --color-rose-gradient: linear-gradient(135deg, #DF8B9F 0%, #C86B83 60%, #9F465F 100%);
+
+  /* Champagne Gold Highlights */
+  --color-gold: #C5A880;
+  --color-gold-light: #E0C9AA;
+  --color-gold-dark: #98784E;
+
+  /* Borders */
+  --color-border: rgba(200, 107, 131, 0.18);
+  --color-border-subtle: rgba(42, 34, 37, 0.08);
+  --color-border-hover: rgba(200, 107, 131, 0.45);
+
+  /* Glassmorphism Tokens */
+  --glass-bg: rgba(255, 248, 249, 0.82);
+  --glass-bg-scrolled: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-border-rose: rgba(200, 107, 131, 0.22);
+  --glass-shadow: 0 10px 32px 0 rgba(200, 107, 131, 0.08);
+  --glass-blur: blur(18px) saturate(170%);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --font-size-base: 16px;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-h1: clamp(2.3rem, 4.5vw, 3.6rem);
+  --font-size-h2: clamp(1.75rem, 3.2vw, 2.5rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.6rem);
+
+  /* Spacing */
+  --space-xs: 6px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 80px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 14px rgba(200, 107, 131, 0.05);
+  --shadow-card: 0 12px 32px rgba(200, 107, 131, 0.07);
+  --shadow-hover: 0 18px 45px rgba(200, 107, 131, 0.14);
+  --shadow-rose: 0 8px 25px rgba(200, 107, 131, 0.32);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-max-width: 1140px;
+  --header-height: 94px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: 
+    radial-gradient(at 10% 12%, rgba(253, 232, 237, 0.7) 0px, transparent 55%),
+    radial-gradient(at 90% 88%, rgba(249, 221, 228, 0.6) 0px, transparent 60%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: var(--color-rose-light);
+  color: var(--color-rose-dark);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--space-xs);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+p.lead {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Eyebrow / Subtitle badge */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-rose);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  background: var(--color-surface-soft);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+
+.eyebrow::before {
+  content: '✦';
+  font-size: 0.75rem;
+  color: var(--color-rose);
+}
+
+.text-rose {
+  color: var(--color-rose);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Image Placeholder Frame Container */
+.img-placeholder-frame {
+  position: relative;
+  background: var(--color-surface-soft);
+  border: 1.5px dashed var(--color-border-hover);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.img-placeholder-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.img-placeholder-frame:hover img {
+  transform: scale(1.04);
+}

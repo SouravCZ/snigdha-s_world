@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reserve your nail appointment or consult on bespoke custom nail art at Snigdha's World." />
+  <title>Reservations &amp; Concierge | Snigdha's World</title>
+  <link rel="icon" type="image/png" href="assets/icons/logo.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Glassmorphism Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <div class="brand">
+        <a href="index.html" aria-label="Snigdha's World Home">
+          <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="brand-logo-img" />
+        </a>
+      </div>
+      <nav>
+        <ul id="primary-nav" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#courses">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-nav-cta">Book Appointment</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="section-header text-center">
+      <div class="eyebrow">Private Reservations</div>
+      <h1>Appointments &amp; Concierge</h1>
+      <p class="lead">Submit your preferred date and treatment below. For expedited weekend slots or design advice, message our WhatsApp concierge directly.</p>
+    </div>
+
+    <div class="grid grid-cols-2">
+      <!-- Luxury Booking Form -->
+      <section class="form-card" aria-labelledby="form-heading">
+        <div class="eyebrow">Reservation Form</div>
+        <h2 id="form-heading" style="margin-bottom: var(--space-md);">Request an Appointment</h2>
+
+        <div id="form-success-banner" class="form-message-banner" role="status" aria-live="polite"></div>
+
+        <form id="booking-form" novalidate>
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="e.g. Ananya Sen"
+              required
+            />
+            <div class="form-error">Please enter your full name.</div>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-control"
+              placeholder="e.g. 9876543210"
+              required
+            />
+            <div class="form-error">Please enter a valid 10-digit contact number.</div>
+          </div>
+
+          <!-- Preferred Date -->
+          <div class="form-group">
+            <label for="date" class="form-label">Preferred Appointment Date *</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="form-control"
+              required
+            />
+            <div class="form-error">Please choose a future reservation date.</div>
+          </div>
+
+          <!-- Service Dropdown -->
+          <div class="form-group">
+            <label for="service" class="form-label">Select Treatment *</label>
+            <select id="service" name="service" class="form-control" required>
+              <option value="">-- Choose a Service or Course --</option>
+              <option value="nail-course">💥 12 Days Nail Extension Course (₹2,499) - Birati 💥</option>
+              <option value="gel-manicure">Structured Gel Manicure (₹1,200)</option>
+              <option value="acrylic-full-set">Sculpted Acrylic Full Set (₹2,500)</option>
+              <option value="nail-art">Bespoke Nail Art (per nail) (₹150 - ₹350)</option>
+              <option value="removal">Gentle Soak-Off Removal (₹400)</option>
+              <option value="pedicure">Therapeutic Spa Pedicure (₹1,500)</option>
+              <option value="custom">Bridal Suite / Bespoke Custom Set</option>
+            </select>
+            <div class="form-error">Please select a service from our menu.</div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message" class="form-label">Notes, Inspo &amp; Shape Preferences</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="form-control"
+              placeholder="Share any Pinterest style ideas, nail shape requests (Almond, Coffin, Square), or existing gel/acrylic removal needs..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-xs);">Submit Reservation Request</button>
+        </form>
+      </section>
+
+      <!-- Atelier Studio Information -->
+      <section class="card" aria-labelledby="info-heading" style="justify-content: space-between;">
+        <div>
+          <div class="eyebrow">Studio Sanctuary</div>
+          <h2 id="info-heading">Direct Concierge</h2>
+          <p class="lead" style="font-size: 1rem; margin-bottom: var(--space-lg);">Prefer instant booking or have photo references to share? Connect with Snigdha on WhatsApp.</p>
+
+          <div style="margin-bottom: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-sm);">
+            <a href="https://wa.me/918777248449" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              ✦ Instant WhatsApp Concierge
+            </a>
+            <a href="https://instagram.com/yourhandle" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              Follow on Instagram: @snigdhas_world
+            </a>
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border); padding-top: var(--space-md); margin-top: var(--space-md);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 6px;">Atelier Location</h3>
+            <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-md);">
+              Birati, Kolkata - 700051<br />
+              Near City Centre Metro, Central Kolkata<br />
+              West Bengal, India – 700001
+            </p>
+
+            <h3 style="font-size: 1.15rem; margin-bottom: 6px;">Operating Hours</h3>
+            <ul style="list-style: none; padding: 0; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.8;">
+              <li><strong>Tuesday – Saturday:</strong> 10:00 AM – 7:00 PM</li>
+              <li><strong>Sunday:</strong> 11:00 AM – 5:00 PM</li>
+              <li style="color: var(--color-rose-dark);"><strong>Monday:</strong> Reserved for Private Bridal VIP Suites</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="background: var(--color-surface-soft); padding: var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--color-border); margin-top: var(--space-lg);">
+          <strong style="display: block; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-rose);">Sanitation &amp; Privacy Guarantee</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 4px 0 0;">Each client enjoys a private suite session with 100% autoclave sterilized surgical-grade diamond bits and disposable files.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Floating Luxury WhatsApp Concierge -->
+  <a href="https://wa.me/918777248449" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer" aria-label="Book on WhatsApp">
+    Book on WhatsApp
+  </a>
+
+  <!-- Shared Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Snigdha's World Home">
+            <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="footer-logo-img" />
+          </a>
+          <p>A private, boutique nail sanctuary dedicated to Russian-style dry manicure precision, sculpted gel architecture, and custom wearable couture.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Atelier Home</a></li>
+            <li><a href="gallery.html">Curated Gallery</a></li>
+            <li><a href="services.html">Treatment Menu</a></li>
+            <li><a href="about.html">The Artist</a></li>
+            <li><a href="contact.html">Appointments</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Atelier Hours</h4>
+          <ul>
+            <li>Tuesday – Saturday</li>
+            <li>10:00 AM – 7:00 PM</li>
+            <li style="margin-top: 8px;">Sunday</li>
+            <li>11:00 AM – 5:00 PM</li>
+            <li style="margin-top: 8px; color: #7A6E73;">Monday: Closed (Private Bookings)</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Concierge &amp; Studio</h4>
+          <ul>
+            <li>Phone: +91 87772 48449</li>
+            <li>Location: Birati, Kolkata - 700051</li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram: @snigdhas_world</a></li>
+            <li><a href="https://wa.me/918777248449" target="_blank" rel="noopener noreferrer">Direct WhatsApp Concierge</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Snigdha's World. All rights reserved. Crafted for elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
+

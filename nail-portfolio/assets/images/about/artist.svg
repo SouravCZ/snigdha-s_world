@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" fill="none">
+  <rect width="600" height="750" fill="#FDF0F3"/>
+  <rect x="15" y="15" width="570" height="720" rx="16" stroke="#F4CCD5" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="300" cy="320" r="60" fill="#FCE4EC"/>
+  <circle cx="300" cy="295" r="28" fill="#D47A90"/>
+  <path d="M255 350 C255 325 345 325 345 350 Z" fill="#D47A90"/>
+  <text x="300" y="440" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="600" fill="#2B2326">Snigdha's Portrait</text>
+  <text x="300" y="475" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" fill="#8E7E84">Replace with your studio bio photo</text>
+  <text x="300" y="505" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#C86B83">(assets/images/about/artist.jpg)</text>
+</svg>

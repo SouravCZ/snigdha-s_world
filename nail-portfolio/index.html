@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Snigdha's World - Luxury nail studio specializing in Russian dry manicures, structured gel architecture, and custom wearable couture." />
+  <title>Snigdha's World | Luxury Nail Atelier</title>
+  <link rel="icon" type="image/png" href="assets/icons/logo.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Glassmorphism Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <div class="brand">
+        <a href="index.html" aria-label="Snigdha's World Home">
+          <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="brand-logo-img" />
+        </a>
+      </div>
+      <nav>
+        <ul id="primary-nav" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#courses">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-nav-cta">Book Appointment</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section with Corner-Aligned Cutout Image -->
+    <section class="hero">
+      <div class="hero-split-grid">
+        <div class="hero-text-content">
+          <div class="eyebrow">Luxury Nail Studio</div>
+          <h1>Where Elegance Meets <span class="italic text-rose">Nail Artistry</span></h1>
+          <p>Step into an intimate sanctuary dedicated to medical-grade dry e-file manicures, natural nail reinforcement, and bespoke handcrafted 3D &amp; chrome couture.</p>
+          
+          <div class="hero-cta-group">
+            <a href="contact.html" class="btn btn-primary">Book Your Set</a>
+            <a href="services.html" class="btn btn-outline">Explore Menu</a>
+          </div>
+        </div>
+
+        <!-- Right Corner-Aligned Transparent Image -->
+        <div class="hero-corner-image-wrap">
+          <img
+            src="assets/images/hero/hero-main.png"
+            alt="Snigdha's World signature amber cat-eye nail extensions"
+            class="hero-transparent-img"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Card Trust / Feature Strip (Inspired by Design Mockup) -->
+    <section class="feature-strip-grid" aria-label="Atelier features">
+      <div class="feature-pill-card">
+        <div class="feature-icon-circle">💎</div>
+        <div class="feature-pill-text">
+          <h4>Medical Sterilization</h4>
+          <p>Autoclaved surgical-grade diamond bits &amp; single-use files.</p>
+        </div>
+      </div>
+      <div class="feature-pill-card">
+        <div class="feature-icon-circle">💅</div>
+        <div class="feature-pill-text">
+          <h4>Japanese &amp; Korean Gels</h4>
+          <p>Cruelty-free, 10-free non-damaging cosmetic resins.</p>
+        </div>
+      </div>
+      <div class="feature-pill-card">
+        <div class="feature-icon-circle">🌸</div>
+        <div class="feature-pill-text">
+          <h4>Custom 3D &amp; Chrome Art</h4>
+          <p>Hand-sculpted bows, airbrushed aura, and chrome powders.</p>
+        </div>
+      </div>
+      <div class="feature-pill-card">
+        <div class="feature-icon-circle">☕</div>
+        <div class="feature-pill-text">
+          <h4>Private 1-on-1 Suite</h4>
+          <p>Never double-booked, with complimentary tea &amp; consultation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Gallery Preview (6 Items from gallery.json) -->
+    <section class="section">
+      <div class="section-header text-center">
+        <div class="eyebrow">Curated Portfolio</div>
+        <h2>Signature Client Sets</h2>
+        <p class="lead">Each set is an individualized canvas of meticulous cuticle prep and lasting apex architecture.</p>
+      </div>
+      <div id="featured-gallery" class="gallery-grid">
+        <!-- Rendered dynamically from data/gallery.json -->
+      </div>
+      <div style="margin-top: var(--space-xl); text-align: center;">
+        <a href="gallery.html" class="btn btn-outline">View Complete Gallery &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Short Services Teaser & Pricing Highlights -->
+    <section class="section">
+      <div class="section-header text-center">
+        <div class="eyebrow">Treatment Highlights</div>
+        <h2>Popular Atelier Services</h2>
+        <p class="lead">Transparent pricing, gentle techniques, and long-lasting salon results.</p>
+      </div>
+      <div class="grid grid-cols-3">
+        <article class="card">
+          <div class="service-card-header">
+            <h3 class="service-card-title">Structured Gel Manicure</h3>
+            <span class="service-card-price">₹1,200</span>
+          </div>
+          <div class="service-card-duration">60 Mins</div>
+          <p class="service-card-desc">Dry e-file manicure, apex reinforcement with Japanese builder gel, and zero-heat LED high-gloss curing.</p>
+          <div style="margin-top: auto;">
+            <a href="services.html" class="btn btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="service-card-header">
+            <h3 class="service-card-title">Sculpted Acrylic Set</h3>
+            <span class="service-card-price">₹2,500</span>
+          </div>
+          <div class="service-card-duration">90–120 Mins</div>
+          <p class="service-card-desc">Custom-sculpted tips created with ultra-pure monomer and polymer powder. Tailored to your favorite silhouette.</p>
+          <div style="margin-top: auto;">
+            <a href="services.html" class="btn btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="service-card-header">
+            <h3 class="service-card-title">Haute Custom Nail Art</h3>
+            <span class="service-card-price">₹150+</span>
+          </div>
+          <div class="service-card-duration">Per Accent Nail</div>
+          <p class="service-card-desc">Liquid chrome powders, 3D gel bows, magnetic velvet cat-eye, micro French lines, and real Swarovski crystal clusters.</p>
+          <div style="margin-top: auto;">
+            <a href="services.html" class="btn btn-sm">View Details</a>
+          </div>
+        </article>
+      </div>
+      <div style="margin-top: var(--space-xl); text-align: center;">
+        <a href="services.html" class="btn btn-primary">See Full Treatment Menu</a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Academy & Available Courses Section
+         ========================================================================== -->
+    <section id="courses" class="section">
+      <div class="section-header text-center">
+        <div class="eyebrow">Snigdha's Academy</div>
+        <h2>12 Days Basic to Advance Nail Extension Course</h2>
+        <p class="lead">স্বল্প খরচায় নিজেকে professional nail artist হিসাবে প্রতিষ্ঠা করতে চাও আজই enroll করো!</p>
+      </div>
+
+      <!-- Main Course Showcase Card -->
+      <div class="course-card-main">
+        <div class="course-header-row">
+          <div class="course-title-group">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-rose); letter-spacing: 0.1em; text-transform: uppercase;">
+              💥 Certified Professional Masterclass 💥
+            </span>
+            <h3>12 Days Comprehensive Nail Extension Course</h3>
+            <p>From fundamental nail anatomy to master 3D sculpting, isolated chrome, and salon business management.</p>
+          </div>
+
+          <div class="course-price-badge-box">
+            <span class="course-fee-label">Total Course Fee</span>
+            <span class="course-fee-amount">₹2,499/-</span>
+            <span style="font-size: 0.75rem; color: #1E5C38; font-weight: 700; display: block; margin-top: 4px;">
+              All Inclusive • Limited Batch Seats
+            </span>
+          </div>
+        </div>
+
+        <!-- Key Perks Bar -->
+        <div class="course-perks-row">
+          <div class="course-perk-pill highlight">
+            <span>✅</span> Practice Product Will Be Provided
+          </div>
+          <div class="course-perk-pill highlight">
+            <span>✅</span> ISO Govt. Registered Certificate Included
+          </div>
+          <div class="course-perk-pill location">
+            <span>📍</span> Location: Birati, Kolkata
+          </div>
+          <div class="course-perk-pill">
+            <span>📞</span> Direct Contact: 8777248449
+          </div>
+        </div>
+
+        <!-- Detailed Class Syllabus Grid -->
+        <div style="margin-top: var(--space-lg); margin-bottom: var(--space-md);">
+          <h4 style="font-size: 1.4rem; color: var(--color-text); margin-bottom: 6px;">
+            ✨ Class Details &amp; Syllabus Modules ✨
+          </h4>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--space-md);">
+            Hands-on practical training covering all modern nail art styles and machinery:
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <!-- Module 1 -->
+          <div class="curriculum-card">
+            <h4><span>💅</span> Module 1: Anatomy &amp; Prep</h4>
+            <ul class="curriculum-topics-list">
+              <li>Nail Anatomy &amp; Physiology</li>
+              <li>Nail Shapes &amp; Contouring</li>
+              <li>Nail Preparation &amp; Cuticle Detailing</li>
+              <li>Product &amp; Safety Knowledge</li>
+              <li>Tools Knowledge &amp; Sanitization</li>
+            </ul>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="curriculum-card">
+            <h4><span>⚙️</span> Module 2: Tools &amp; Extension Machinery</h4>
+            <ul class="curriculum-topics-list">
+              <li>Manual Filing &amp; Shaping Geometry</li>
+              <li>Driller / E-File Knowledge &amp; Speed Control</li>
+              <li>Brush Knowledge &amp; Longevity Care</li>
+              <li>Tips Application &amp; Sizing</li>
+              <li>Nail Refilling &amp; Safe Removal</li>
+            </ul>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="curriculum-card" style="grid-column: 1 / -1;">
+            <h4><span>🎨</span> Module 3: Advanced Nail Art Masterclass</h4>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 8px;">
+              Master every trending style requested by modern salon clients:
+            </p>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag">Color Theory</span>
+              <span class="skill-tag">Brush Art</span>
+              <span class="skill-tag">Animal Print Art</span>
+              <span class="skill-tag">Glitter Application</span>
+              <span class="skill-tag">Spider Gel Art</span>
+              <span class="skill-tag">Stone &amp; Flower Application</span>
+              <span class="skill-tag">Sticker Application</span>
+              <span class="skill-tag">Ombré Art</span>
+              <span class="skill-tag">French Art &amp; Smile Lines</span>
+              <span class="skill-tag">Foil Art</span>
+              <span class="skill-tag">Bubble Art</span>
+              <span class="skill-tag">Types of Chrome Art</span>
+              <span class="skill-tag">Isolated Chrome</span>
+              <span class="skill-tag">Different Types of Cat Eyes</span>
+              <span class="skill-tag">Marble Art</span>
+              <span class="skill-tag">Blooming Art</span>
+              <span class="skill-tag">3D Flower Sculpting</span>
+              <span class="skill-tag">&amp; Many More Techniques</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career & Business Skills Bonus Block -->
+        <div class="career-bonus-card">
+          <h4><span>🚀</span> Professional Career &amp; Business Modules Included</h4>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin: 0;">
+            We don't just teach you nail art—we train you to become a successful, earning professional artist:
+          </p>
+          <div class="career-bonus-grid">
+            <div class="career-bonus-item">✨ Social Media Management</div>
+            <div class="career-bonus-item">✨ Nail Photography Techniques</div>
+            <div class="career-bonus-item">✨ Nail Aftercare Guidelines</div>
+            <div class="career-bonus-item">✨ Secret Nails Tips &amp; Tricks</div>
+            <div class="career-bonus-item">✨ Client Handling &amp; Retention</div>
+          </div>
+        </div>
+
+        <!-- Bengali Callout Banner -->
+        <div class="bengali-banner">
+          <div class="bengali-banner-text">
+            স্বল্প খরচায় নিজেকে nail artist হিসাবে প্রতিষ্ঠা করতে চাও আজই কন্টাক্ট করো 👇🏾
+          </div>
+          <div class="bengali-banner-phone">
+            <span>📞</span> 8777248449
+          </div>
+        </div>
+
+        <!-- Split Grid: Enrollment Form + Quick WhatsApp Assist -->
+        <div class="course-form-split" style="margin-top: var(--space-xl);">
+          <!-- Enrollment Form -->
+          <div class="form-card" style="border: 1px solid var(--color-border); background: var(--color-surface);">
+            <div class="eyebrow">Direct Enrollment</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Register for the Upcoming Batch</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: var(--space-md);">
+              Fill out this quick form and we will call you to confirm your seat and batch timings.
+            </p>
+
+            <div id="course-success-banner" class="form-message-banner" role="status" aria-live="polite"></div>
+
+            <form id="course-enroll-form" novalidate>
+              <div class="form-group">
+                <label for="student-name" class="form-label">Student Full Name *</label>
+                <input type="text" id="student-name" name="student_name" class="form-control" placeholder="e.g. Priya Sharma" required />
+                <div class="form-error">Please enter your full name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="student-phone" class="form-label">WhatsApp / Phone Number *</label>
+                <input type="tel" id="student-phone" name="student_phone" class="form-control" placeholder="e.g. 8777248449" required />
+                <div class="form-error">Please enter a valid 10-digit phone number.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="preferred-batch" class="form-label">Preferred Batch Timing *</label>
+                <select id="preferred-batch" name="preferred_batch" class="form-control" required>
+                  <option value="">-- Select Preferred Batch --</option>
+                  <option value="morning">Morning Batch (11:00 AM – 1:00 PM)</option>
+                  <option value="afternoon">Afternoon Batch (2:00 PM – 4:00 PM)</option>
+                  <option value="weekend">Weekend Special Batch</option>
+                  <option value="flexible">Flexible / Any Upcoming Slot</option>
+                </select>
+                <div class="form-error">Please select your preferred batch.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="student-city" class="form-label">Your Location / City</label>
+                <input type="text" id="student-city" name="student_city" class="form-control" placeholder="e.g. Birati / Dum Dum / Kolkata" />
+              </div>
+
+              <div class="form-group">
+                <label for="student-message" class="form-label">Questions or Experience Level (Optional)</label>
+                <textarea id="student-message" name="student_message" rows="3" class="form-control" placeholder="Mention if you are a complete beginner or already practice nail art..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Course Application (Fee: ₹2,499)
+              </button>
+            </form>
+          </div>
+
+          <!-- Quick WhatsApp / Call Box -->
+          <div class="card" style="background: var(--color-surface); border: 1.5px solid var(--color-border); padding: var(--space-lg);">
+            <div class="eyebrow">Instant Seat Booking</div>
+            <h4 style="font-size: 1.3rem; margin-bottom: 8px;">Prefer to Chat on WhatsApp?</h4>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: var(--space-md);">
+              You can directly connect with Snigdha on WhatsApp to discuss batch starting dates, location directions in Birati, and seat reservation.
+            </p>
+
+            <a href="https://wa.me/918777248449?text=Hi%20Snigdha,%20I%20am%20interested%20in%20joining%20the%2012%20Days%20Nail%20Extension%20Course%20(Fee:%20Rs.2499).%20Please%20share%20upcoming%20batch%20dates." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary" 
+               style="width: 100%; margin-bottom: var(--space-sm); text-align: center;">
+              💬 Book on WhatsApp: 8777248449
+            </a>
+
+            <a href="tel:8777248449" class="btn btn-outline" style="width: 100%; text-align: center; margin-bottom: var(--space-md);">
+              📞 Direct Call: 8777248449
+            </a>
+
+            <div style="border-top: 1px dashed var(--color-border); padding-top: var(--space-sm); font-size: 0.85rem; color: var(--color-text-muted);">
+              <p style="margin-bottom: 4px;"><strong>Studio Academy Address:</strong> Birati, Kolkata, West Bengal.</p>
+              <p style="margin: 0;"><strong>Certification:</strong> ISO Govt. Registered Certificate awarded on successful course completion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram / Recent Works Visual Strip (Inspired by Mockup) -->
+    <section class="section" style="margin-bottom: var(--space-lg);">
+      <div class="section-header text-center" style="margin-bottom: var(--space-md);">
+        <div class="eyebrow">Social Feed</div>
+        <h2>Follow Our Daily Sets</h2>
+        <p class="lead" style="margin-bottom: var(--space-xs);">Tag @snigdhas_world on Instagram for a feature in our studio stories.</p>
+      </div>
+      <div class="instagram-feed-strip">
+        <div class="insta-thumbnail-slot">
+          <img src="assets/images/gallery/01.svg" alt="Recent work 01" loading="lazy" />
+        </div>
+        <div class="insta-thumbnail-slot">
+          <img src="assets/images/gallery/02.svg" alt="Recent work 02" loading="lazy" />
+        </div>
+        <div class="insta-thumbnail-slot">
+          <img src="assets/images/gallery/03.svg" alt="Recent work 03" loading="lazy" />
+        </div>
+        <div class="insta-thumbnail-slot">
+          <img src="assets/images/gallery/04.svg" alt="Recent work 04" loading="lazy" />
+        </div>
+        <div class="insta-thumbnail-slot">
+          <img src="assets/images/gallery/05.svg" alt="Recent work 05" loading="lazy" />
+        </div>
+      </div>
+      <div style="margin-top: var(--space-md); text-align: center;">
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+          Connect on Instagram &rarr;
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <button type="button" id="lightbox-close" class="lightbox-close-btn" aria-label="Close dialog">Close &times;</button>
+      <div class="lightbox-image-container">
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+      <div id="lightbox-caption" class="lightbox-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- Floating Luxury WhatsApp Concierge -->
+  <a href="https://wa.me/918777248449" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer" aria-label="Book on WhatsApp">
+    Book on WhatsApp
+  </a>
+
+  <!-- Shared Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Snigdha's World Home">
+            <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="footer-logo-img" />
+          </a>
+          <p>A private, boutique nail sanctuary dedicated to Russian-style dry manicure precision, sculpted gel architecture, and custom wearable couture.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Atelier Home</a></li>
+            <li><a href="gallery.html">Curated Gallery</a></li>
+            <li><a href="services.html">Treatment Menu</a></li>
+            <li><a href="about.html">The Artist</a></li>
+            <li><a href="contact.html">Appointments</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Atelier Hours</h4>
+          <ul>
+            <li>Tuesday – Saturday</li>
+            <li>10:00 AM – 7:00 PM</li>
+            <li style="margin-top: 8px;">Sunday</li>
+            <li>11:00 AM – 5:00 PM</li>
+            <li style="margin-top: 8px; color: #7A6E73;">Monday: Closed (Private Bookings)</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Concierge &amp; Studio</h4>
+          <ul>
+            <li>Phone: +91 87772 48449</li>
+            <li>Location: Birati, Kolkata - 700051</li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram: @snigdhas_world</a></li>
+            <li><a href="https://wa.me/918777248449" target="_blank" rel="noopener noreferrer">Direct WhatsApp Concierge</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Snigdha's World. All rights reserved. Crafted for elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

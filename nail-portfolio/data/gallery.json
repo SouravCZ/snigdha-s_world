@@ -1,0 +1,74 @@
+[
+  {
+    "src": "assets/images/gallery/01.png",
+    "alt": "Amber velvet magnetic cat-eye with 3D metallic gold chrome outline",
+    "tags": ["chrome"],
+    "caption": "Amber Velvet & Gold Chrome"
+  },
+  {
+    "src": "assets/images/gallery/02.svg",
+    "alt": "Hailey Glazed Chrome on sheer pearlescent base",
+    "tags": ["chrome"],
+    "caption": "Hailey Glazed Chrome"
+  },
+  {
+    "src": "assets/images/gallery/03.svg",
+    "alt": "Hand-sculpted 3D floral petals with micro pearl centers",
+    "tags": ["3D"],
+    "caption": "3D Sculpted Charms"
+  },
+  {
+    "src": "assets/images/gallery/04.svg",
+    "alt": "Seamless soft blush bridal ombré with subtle shimmer",
+    "tags": ["bridal", "french"],
+    "caption": "Soft Bridal Ombré"
+  },
+  {
+    "src": "assets/images/gallery/05.svg",
+    "alt": "Minimalist ultra-fine black smile lines on bare nail bed",
+    "tags": ["french"],
+    "caption": "Micro French Edge"
+  },
+  {
+    "src": "assets/images/gallery/06.svg",
+    "alt": "High-shine liquid silver mirror chrome finish",
+    "tags": ["chrome"],
+    "caption": "Liquid Silver Chrome"
+  },
+  {
+    "src": "assets/images/gallery/07.svg",
+    "alt": "Clear 3D waterdrop gel accents on sheer pink",
+    "tags": ["3D"],
+    "caption": "3D Dewdrops & Pearls"
+  },
+  {
+    "src": "assets/images/gallery/08.svg",
+    "alt": "Bridal lace hand-painted detailing with crystal studs",
+    "tags": ["bridal"],
+    "caption": "Bridal Lace & Shimmer"
+  },
+  {
+    "src": "assets/images/gallery/09.svg",
+    "alt": "Champagne gold metallic chrome powder on coffin shape",
+    "tags": ["chrome"],
+    "caption": "Champagne Gold Chrome"
+  },
+  {
+    "src": "assets/images/gallery/10.svg",
+    "alt": "Sculpted 3D milky ribbon bow and pearl cluster",
+    "tags": ["3D", "bridal"],
+    "caption": "3D Ribbon & Bow"
+  },
+  {
+    "src": "assets/images/gallery/11.svg",
+    "alt": "Deep architectural V-cut French smile lines",
+    "tags": ["french"],
+    "caption": "Deep V-Cut French"
+  },
+  {
+    "src": "assets/images/gallery/12.svg",
+    "alt": "Luminous sheer bridal veil with iridescent pearlescent glaze",
+    "tags": ["bridal", "chrome"],
+    "caption": "Luminous Pearl Glaze"
+  }
+]

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio gallery of bespoke nail art, French ombré, glazed chrome, 3D sculpted gel charms, and bridal sets at Snigdha's World." />
+  <title>Curated Gallery | Snigdha's World</title>
+  <link rel="icon" type="image/png" href="assets/icons/logo.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Glassmorphism Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <div class="brand">
+        <a href="index.html" aria-label="Snigdha's World Home">
+          <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="brand-logo-img" />
+        </a>
+      </div>
+      <nav>
+        <ul id="primary-nav" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#courses">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-nav-cta">Book Appointment</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="section-header text-center">
+      <div class="eyebrow">Haute Portfolio</div>
+      <h1>Curated Work Gallery</h1>
+      <p class="lead">Select your desired aesthetic below to filter through our client sets, hand-sculpted 3D accents, and editorial chrome glazes.</p>
+    </div>
+
+    <!-- Tag Filter Buttons -->
+    <nav class="filter-bar" aria-label="Filter works by style">
+      <button type="button" class="filter-btn active" data-filter="all">All Styles</button>
+      <button type="button" class="filter-btn" data-filter="french">French</button>
+      <button type="button" class="filter-btn" data-filter="chrome">Chrome</button>
+      <button type="button" class="filter-btn" data-filter="3D">3D Charms</button>
+      <button type="button" class="filter-btn" data-filter="bridal">Bridal</button>
+    </nav>
+
+    <!-- Gallery Grid (Loaded via fetch from data/gallery.json with dedicated image slots) -->
+    <section id="gallery-grid" class="gallery-grid" aria-live="polite">
+      <!-- Injected by js/gallery.js -->
+    </section>
+
+    <!-- Gallery Consultation Banner -->
+    <section class="card" style="margin-top: var(--space-xxl); text-align: center; padding: var(--space-xl); background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(253, 241, 243, 0.9));">
+      <div class="eyebrow">Custom Commissions</div>
+      <h2>Have a Specific Design in Mind?</h2>
+      <p class="lead" style="max-width: 600px; margin: 0 auto var(--space-md);">We specialize in recreating editorial Pinterest moodboards and designing personalized hand-painted nail sets.</p>
+      <a href="contact.html" class="btn btn-primary">Book Consultation &amp; Share Photo</a>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <button type="button" id="lightbox-close" class="lightbox-close-btn" aria-label="Close dialog">Close &times;</button>
+      <div class="lightbox-image-container">
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+      <div id="lightbox-caption" class="lightbox-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- Floating Luxury WhatsApp Concierge -->
+  <a href="https://wa.me/918777248449" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer" aria-label="Book on WhatsApp">
+    Book on WhatsApp
+  </a>
+
+  <!-- Shared Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Snigdha's World Home">
+            <img src="assets/icons/logo.png" alt="Snigdha's World Logo" class="footer-logo-img" />
+          </a>
+          <p>A private, boutique nail sanctuary dedicated to Russian-style dry manicure precision, sculpted gel architecture, and custom wearable couture.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Atelier Home</a></li>
+            <li><a href="gallery.html">Curated Gallery</a></li>
+            <li><a href="services.html">Treatment Menu</a></li>
+            <li><a href="about.html">The Artist</a></li>
+            <li><a href="contact.html">Appointments</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Atelier Hours</h4>
+          <ul>
+            <li>Tuesday – Saturday</li>
+            <li>10:00 AM – 7:00 PM</li>
+            <li style="margin-top: 8px;">Sunday</li>
+            <li>11:00 AM – 5:00 PM</li>
+            <li style="margin-top: 8px; color: #7A6E73;">Monday: Closed (Private Bookings)</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Concierge &amp; Studio</h4>
+          <ul>
+            <li>Phone: +91 87772 48449</li>
+            <li>Location: Birati, Kolkata - 700051</li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram: @snigdhas_world</a></li>
+            <li><a href="https://wa.me/918777248449" target="_blank" rel="noopener noreferrer">Direct WhatsApp Concierge</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Snigdha's World. All rights reserved. Crafted for elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
+
